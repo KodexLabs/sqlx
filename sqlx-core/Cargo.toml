@@ -59,7 +59,7 @@ all-types = [
     "uuid",
     "bit-vec",
 ]
-bigdecimal = ["bigdecimal_", "num-bigint"]
+bigdecimal = ["bigdecimal_", "num-bigint", "bigdecimal_/serde"]
 decimal = ["rust_decimal", "num-bigint"]
 json = ["serde", "serde_json"]
 
