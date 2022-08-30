@@ -281,8 +281,7 @@ checksum = "904dfeac50f3cdaba28fc6f57fdcddb75f49ed61346676a78c4ffe55877802fd"
 [[package]]
 name = "bigdecimal"
 version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cc403c26e6b03005522e6e8053384c4e881dfe5b2bf041c0c2c49be33d64a539"
+source = "git+https://github.com/KodexLabs/bigdecimal-rs.git?branch=kodex#fc797c302f4947e429cc331febc66fe3c7badc5e"
 dependencies = [
  "num-bigint 0.3.2",
  "num-integer",
