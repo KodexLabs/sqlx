@@ -53,6 +53,7 @@ all-types = [
     "time",
     "bigdecimal",
     "decimal",
+    "u256",
     "ipnetwork",
     "mac_address",
     "json",
@@ -61,6 +62,7 @@ all-types = [
 ]
 bigdecimal = ["bigdecimal_", "num-bigint", "bigdecimal_/serde"]
 decimal = ["rust_decimal", "num-bigint"]
+u256 = ["ethereum-types"]
 json = ["serde", "serde_json"]
 
 # runtimes
@@ -104,6 +106,7 @@ atoi = "0.4.0"
 sqlx-rt = { path = "../sqlx-rt", version = "0.5.6" }
 base64 = { version = "0.13.0", default-features = false, optional = true, features = ["std"] }
 bigdecimal_ = {git = "https://github.com/KodexLabs/bigdecimal-rs.git", branch = "kodex", optional = true, package = "bigdecimal" }
+ethereum-types = { version = "0.13.1", optional = true }
 rust_decimal = { version = "1.8.1", optional = true }
 bit-vec = { version = "0.6.2", optional = true }
 bitflags = { version = "1.2.1", default-features = false }
