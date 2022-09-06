@@ -1,6 +1,6 @@
 use num_bigint::{BigInt, Sign};
 use rust_decimal::{
-    prelude::{ToPrimitive, Zero},
+    prelude::{ToPrimitive},
     Decimal,
 };
 use std::convert::{TryFrom, TryInto};
