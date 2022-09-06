@@ -57,6 +57,9 @@ impl_database_ext! {
         #[cfg(feature = "decimal")]
         sqlx::types::Decimal,
 
+        #[cfg(feature = "u256")]
+        sqlx::types::U256,
+
         #[cfg(feature = "ipnetwork")]
         sqlx::types::ipnetwork::IpNetwork,
 
