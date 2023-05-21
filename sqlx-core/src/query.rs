@@ -15,10 +15,10 @@ use crate::types::Type;
 /// Raw SQL query with bind parameters. Returned by [`query`][crate::query::query].
 #[must_use = "query must be executed to affect database"]
 pub struct Query<'q, DB: Database, A> {
-    pub(crate) statement: Either<&'q str, &'q <DB as HasStatement<'q>>::Statement>,
-    pub(crate) arguments: Option<A>,
-    pub(crate) database: PhantomData<DB>,
-    pub(crate) persistent: bool,
+    pub statement: Either<&'q str, &'q <DB as HasStatement<'q>>::Statement>,
+    pub arguments: Option<A>,
+    pub database: PhantomData<DB>,
+    pub persistent: bool,
 }
 
 /// SQL query that will map its results to owned Rust types.
